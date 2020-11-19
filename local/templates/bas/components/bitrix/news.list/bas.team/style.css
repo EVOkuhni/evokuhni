@@ -1,0 +1,66 @@
+.bas_team {margin: 0 0 50px;}
+.bas_team .header {
+	overflow: hidden;
+	margin: 0 0 20px;
+}
+
+.bas_team .title {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 28px;
+	color: #54306a;
+	margin: 10px 0;
+}
+.bas_team .title > span {
+	background: linear-gradient(0deg, yellow 20%, #FFFFFF 40%);
+}
+.bas_team .item {margin: 0 0 30px;}
+.bas_team img {
+	display: block;
+	margin: auto;
+	filter: grayscale(1);
+	transition: all 0.3s linear;
+	width: 100%;
+}
+.bas_team img:hover,
+.bx-touch .bas_team img {filter: grayscale(0);}
+.bas_team .name {
+	font-weight: bold;
+	font-size: 20px;
+	color: #000;
+	margin: 15px 0 0;
+}
+.bas_team .text {margin: 0 0 15px;}
+
+.bas_team span.carousel_control {float: right;}
+.bas_team span.carousel_control a {
+    background-color: #8bb047;
+    display: inline-block;
+    height: 30px;
+    margin-left: 5px;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+    text-indent: -99px;
+    transition: background-color 0.3s linear 0s;
+    vertical-align: middle;
+    width: 30px;
+}
+.bas_team span.carousel_control a:hover {background-color: #452f57;}
+.bas_team span.carousel_control a:before {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAUCAYAAACJfM0wAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAWxJREFUeNqklU1LQkEYhb3ei4h0KQjaCtLCFrVw5yJXuUj9je5atlIKalEW2CL8A4FQC0EiCKIQQXs7Q2dguDgf6sADl/k4c5j7zplIRHKeVgF9MAYHIAXn4M21KO8RrYJHcAR2OF99D7ihvSnHFo7BVP7bE9gD+2DEvgmo2tbbRGvggwIPIDXG1AZDjk1pIEi4Dj658AaUVsxJuaHQQM0n3ABfXNAHRcdRlbix0EjdJtwEP5x4CQoOUU2RBoSGTrPCbTDjhAuQBIhqCjQiNNbUwi0w50AXxGuIahIaEho8U51jdlyDaANRjTJ0S60XVfBLlnQccGFc7Rcs+J3on2aeb7yh2y411LG2tqkI2/l2suVm1nDPU8POilh1QUJunVnDPaOGG74rbebEIJMTQbfOFUJmsg0ZPGZO3LtywiWcYyROKDBiZO5mku1k3djUVMArhZ7BXUgWK6KAp6kMrsA3eAeHoMOnytr+BBgAha+KoSOeQNcAAAAASUVORK5CYII=");
+    background-repeat: no-repeat;
+    content: " ";
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    width: 11px;
+}
+.bas_team span.carousel_control a.control_prev:before {
+    background-position: left center;
+    left: 8px;
+}
+.bas_team span.carousel_control a.control_next:before {
+    background-position: right center;
+    right: 8px;
+}

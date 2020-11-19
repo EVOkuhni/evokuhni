@@ -1,0 +1,18 @@
+.bas_result_new_num2 {margin-top: 57px;}
+.bas_result_new_num2 div.block {border: 3px solid #eff0f4;}
+.bas_result_new_num2 div.top {padding: 30px 25px;}
+.bas_result_new_num2 div.top div.title {
+    color: #724398;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+@media (max-width: 767px) {
+
+	.bas_result_new_num2 div.top  {padding: 20px 15px;}
+	.bas_result_new_num2 div.top div.title {margin-bottom: 20px;}
+}
+div.block .link{
+font-weight: bold;
+}

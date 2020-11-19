@@ -1,0 +1,28 @@
+.designers-page {
+    position: relative;
+    height: 330px;
+    display: flex;
+    align-items: center;
+}
+.designers-page__img {
+    position: absolute;
+    right: 0;
+    top: calc(50% - 30px);
+    transform: translate(0, -50%);
+}
+
+@media (min-width: 1200px) AND (max-width: 1400px)
+{
+	.designers-page__img {
+		right: -130px;
+	}
+}
+@media (max-width: 1199px)
+{
+	.designers-page {
+		height: auto;
+	}
+	.designers-page__img {
+		display: none;
+	}
+}

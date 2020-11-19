@@ -1,0 +1,12 @@
+.bas_search_page .search-advanced {
+    color: #aaa;
+    margin-bottom: 15px;
+}
+.bas_search_page .search-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+.bas_search_page .bas_title {
+    font-size: 20px;
+    line-height: 30px;
+}

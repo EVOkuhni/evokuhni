@@ -1,0 +1,30 @@
+.bas_result_new_num7_bg {
+	background-color: #f6f7f9;
+	padding: 75px 0;
+}
+.bas_result_new_num7 {
+	background-color: #FFF;
+}
+.bas_result_new_num7 .block {border: 10px solid #54306a;}
+.bas_result_new_num7 .top {padding: 55px 90px;}
+.bas_result_new_num7 .top .title {
+    color: #54306a;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+@media (max-width: 767px)
+{
+	.bas_result_new_num7 .top  {padding: 20px 15px;}
+	.bas_result_new_num7 .top .title {
+		margin-bottom: 20px;
+		font-size: 20px;
+	}
+}
+@media (min-width: 768px) AND (max-width: 991px)
+{
+	.bas_result_new_num7 .top {
+		padding: 55px 60px;
+	}
+}

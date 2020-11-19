@@ -1,0 +1,9 @@
+.bas_banner {margin: 0 0 20px;}
+.bas_banner img {display: block;}
+
+@media screen and (max-width: 576px) {
+    .bas_banner img {
+        width: 100%;
+        height: 100%;
+    }
+}

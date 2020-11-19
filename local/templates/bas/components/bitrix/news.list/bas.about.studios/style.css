@@ -1,0 +1,212 @@
+.bas_studio .title {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 28px;
+	margin-bottom: 15px;
+}
+.bas_studio .item {
+	display: block;
+	position: relative;
+}
+.bas_studio img {
+	display: block;
+	margin: 0 0 30px;
+	width: 100%;
+}
+.bas_studio .text {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	text-align: center;
+	color: #555;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px 0;
+	font-size: 20px;
+	line-height: 26px;
+	font-weight: bold;
+	transition: opacity 0.3s linear;
+	opacity: 0;
+}
+.bas_studio .item:hover .text {opacity: 1;}
+
+@media (max-width: 575px)
+{
+    .bx-touch .bas_studio .item .text  {opacity: 1;}
+}
+
+.fancybox-bas-layout .fancybox-outer {
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	overflow: visible;
+	background: #fff;
+	box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+	transition: opacity .3s;
+}
+
+/* Make it to fade-out while closing */
+.fancybox-bas-layout.fancybox-is-closing .fancybox-outer {
+	opacity: 0;
+}
+
+/* Move caption area to the right side */
+.fancybox-bas-layout .fancybox-caption {
+	top: 0;
+	right: 44px;
+	bottom: 0;
+	left: auto;
+	width: 256px;
+	padding: 0;
+	background: #333;
+	pointer-events: all; /* Make text selectable */
+	border-right: 1px solid rgba(255,255,255,.08);
+	text-align: left;
+}
+
+/* Adjust content area position */
+.fancybox-bas-layout .fancybox-stage {
+	right: 300px;
+}
+
+.fancybox-show-thumbs .fancybox-inner {
+    right: 212px;
+}
+
+/* Remove top border from the caption */
+.fancybox-bas-layout .fancybox-caption {
+	padding: 15px 20px;
+	border: 0;
+	overflow: auto;
+	background: linear-gradient(to bottom, #333, #000);
+}
+
+.fancybox-bas-layout .fancybox-caption:before {display: none;}
+.fancybox-bas-layout .fancybox-caption:after {
+	border-bottom: none;
+	left: 0;
+	right: 0;
+	top: auto;
+	bottom: 0;
+	height: 15px;
+	position: relative;
+}
+
+/* Align buttons at the right side  */
+.fancybox-bas-layout .fancybox-toolbar {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: auto;
+	width: 44px;
+	background: #333;
+	border-left: 1px solid #222;
+}
+
+/* Remove background from all buttons */
+.fancybox-bas-layout .fancybox-button,
+.fancybox-bas-layout .fancybox-navigation button:before {
+	background: transparent;
+}
+
+/* Change arrow color */
+.fancybox-bas-layout .fancybox-navigation button {
+	color: #333 !important;
+	padding: 10px;
+}
+
+
+.fancybox-bas-layout.fancybox-show-thumbs .fancybox-button--arrow_right {
+	right: 0;
+}
+
+.fancybox-bas-layout .fancybox-slide--image {padding: 0;}
+
+@media (min-width: 768px) AND (max-width: 991px)
+{
+
+	.fancybox-bas-layout .fancybox-stage {
+		right: 300px;
+		bottom: 86px;
+	}
+}
+@media (max-width: 767px)
+{
+	.fancybox-bas-layout .fancybox-stage {
+		right: 44px;
+		bottom: 100px;
+	}
+	.fancybox-bas-layout .fancybox-caption {
+		top: auto;
+		height: 100px;
+		left: 0;
+		width: auto;
+	}
+    .fancybox-show-thumbs .fancybox-inner {
+        right: 110px !important;
+    }
+}
+
+.color-title {
+	color: #54306a;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 30px;
+}
+.color {
+	color: #54306a;
+}
+.about-title {
+	margin-bottom: 20px;
+}
+.about-quote {
+	background: url(/img/quote.png) no-repeat;
+	line-height: 1.27;
+	font-size: 20px;
+	font-weight: 300;
+	font-style: italic;
+	font-stretch: normal;
+	color: #54306a;
+	padding-left: 30px;
+	padding-top: 27px;
+	padding-bottom: 20px;
+}
+.about-text {
+	font-size: 115%;
+	color: #65657d;
+}
+.about-studio-title {
+	color: #54306a;
+	font-size: 22px;
+	line-height: 1.2;
+}
+.about-studio-card {
+	background-color: #FFF;
+	padding: 35px;
+}
+.about-title-evo > span {
+	background: linear-gradient(0deg, yellow 20%, #FFF 40%);
+}
+@media screen and (max-width: 575px) {
+	.about-title-evo {
+		text-align: center;
+	}
+}
+.bas_prime_about_page .text {
+	font-size: 13px;
+	line-height: 1.38;
+}
+.bas_prime_about_page .triggers > div {
+	padding: 0 7px 0 7px;
+}
+.bas_prime_about_page {
+	border: none;
+}
+
+.about-studio__img {
+	display: block;
+	width: 100%;
+}

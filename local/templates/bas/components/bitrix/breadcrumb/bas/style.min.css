@@ -1,0 +1,1 @@
+.breadcrumb{background-color:transparent;font-size:14px;margin:0 0 25px;padding:0}.breadcrumb > li{}.breadcrumb > li + li:before{color:#ccc;content:"/ ";padding:0 0 0 4px}.breadcrumb > li.active{color:#808080}.breadcrumb a{}.breadcrumb a:hover{}

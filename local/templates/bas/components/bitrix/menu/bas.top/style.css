@@ -1,0 +1,111 @@
+.bas_menu_top {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 0;
+}
+.bas_menu_top > li {
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+}
+.bas_menu_top > li > a,
+.bas_menu_top > li > span {
+    text-decoration: none;
+    margin: 0 20px 0 0;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--slate-grey);
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    border-bottom: 2px solid transparent;
+}
+.bas_menu_top > li > a:hover {
+	text-decoration: none;
+	border-color: var(--light-olive-green);
+}
+.bas_menu_top > li:nth-last-child(3) > a,
+.bas_menu_top > li:nth-last-child(3) > span {color: #8bb047;}
+.bas_menu_top > li:last-child > a,
+.bas_menu_top > li:last-child > span {margin: 0;}
+.bas_menu_top ul {
+    position: absolute;
+    background-color: #FFF;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 50px;
+    z-index: 20;
+    padding: 10px 20px;
+    border: 1px solid rgba(110, 114, 127, 0.3);
+	box-shadow: 10px 20px 20px -10px rgba(197, 197, 218, 0.32);
+    left: -20px;
+    display: none;
+}
+.bas_menu_top li:hover ul {display: block;}
+.bas_menu_top ul li {
+	line-height: 30px;
+	font-size: 16px;
+}
+.bas_menu_top ul a,
+.bas_menu_top ul span {
+    white-space: nowrap;
+    color: #65657d;
+    text-decoration: none;
+    font-size: 14px;
+}
+.bas_menu_top a:hover {text-decoration: underline;}
+
+@media (min-width: 992px)
+{
+	.bas_menu_top {display: block !important;}
+}
+@media (max-width: 991px)
+{
+	.bas_menu_top_btn {
+		display: block;
+		font-size: 0;
+	}
+	.bas_menu_top_btn .icon {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.bas_menu_top_btn .icon span {
+		background-color: var(--light-olive-green);
+		border-radius: 2px;
+		height: 2px;
+		width: 17px;
+		display: block;
+	}
+	.bas_menu_top_btn .icon span + span {margin-top: 3px;}
+	.bas_menu_top_btn .name {
+		display: inline-block;
+		vertical-align: middle;
+		color: var(--light-olive-green);
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 0 0 0 5px;
+		font-size: 14px;
+	}
+
+	.bas_menu_top {
+		position: absolute;
+		left: 0;
+		top: 110px;
+		background-color: #FFF;
+		text-align: center;
+		right: 0;
+		z-index: 700;
+		border-top: 1px solid #b8ce8f;
+		border-bottom: 1px solid #b8ce8f;
+		display: none;
+	}
+	.bas_menu_top > li {display: block;}
+	.bas_menu_top > li > a,
+    .bas_menu_top > li > span {margin: 0;}
+	.bas_menu_top ul {display: none !important;}
+}

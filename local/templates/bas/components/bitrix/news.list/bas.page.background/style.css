@@ -1,0 +1,18 @@
+@media (min-width: 1200px) {
+
+	main.main {
+		background-position: right top;
+		background-repeat: no-repeat;
+	}
+}
+@media (min-width: 768px) AND (max-width: 1199px) {
+
+	main.main {
+		background-position: center top;
+		background-repeat: no-repeat;
+	}
+}
+@media (max-width: 767px) {
+
+	main.main {background-image: none !important;}
+}

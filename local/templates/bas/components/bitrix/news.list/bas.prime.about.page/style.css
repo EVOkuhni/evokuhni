@@ -1,0 +1,15 @@
+.bas_prime_all_page {
+	border-top: 1px solid rgba(110, 114, 127, 0.3);
+	background-color: #FFF;
+	padding: 40px 0 20px;
+}
+.bas_prime_all_page .item {margin: 0 0 20px;}
+.bas_prime_all_page .pict {
+    font-size: 0;
+    height: 100px;
+    margin: 0 0 15px;
+    line-height: 100px;
+}
+.bas_prime_all_page .pict img {vertical-align: middle;}
+.bas_prime_all_page .pict:hover img:first-child,
+.bas_prime_all_page .pict:not(:hover) img:last-child {display: none;}

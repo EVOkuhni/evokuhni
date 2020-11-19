@@ -1,0 +1,216 @@
+.bas-form-ticket {
+	border: 8px solid var(--grape);
+	padding: 40px;
+	margin-bottom: 57px;
+	margin-top: 68px;
+	background-color: #ffffff;
+}
+
+.skew-title {
+	color: #FFFFFF;
+	background-image: linear-gradient(266deg, #8d5ea4, #54306a);
+	font-size: 40px;
+	font-weight: bold;
+	display: inline-block;
+	padding: 10px 38px;
+	transform: skew(-20deg);
+	border-radius: 2px;
+}
+
+.skew-title:before {
+	transform: skew(20deg) !important;
+	left: 17px !important;
+}
+
+.skew-title > span {
+	display: inline-block;
+	transform: skew(20deg);
+	line-height: 1;
+}
+
+.bas-form-ticket input[type="tel"] {
+	border: none;
+	outline: none;
+	font-size: 18px;
+	font-weight: 500;
+	color: #3e3e4a;
+	background-color: transparent;
+}
+
+.bas-form-ticket__tel-bg {
+	position: absolute;
+	top: -15px;
+	left: 0;
+	width: 100%;
+}
+
+.bas-form-ticket__tel-bg__item {
+	transform: skew(-10deg);
+	background: var(--pale-gray);
+	width: 500px;
+	height: 54px;
+	margin: 0 auto;
+}
+
+.bas-form-ticket button[type="submit"] {
+	font-weight: bold;
+	line-height: 30px;
+	padding: 10px 55px;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+.bas-form-ticket__subtext {
+	opacity: 0.5;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.43;
+	letter-spacing: normal;
+	text-align: center;
+	color: #2d2d34;
+}
+
+.bas-form-ticket__subtext a {
+	color: #2d2d34;
+}
+
+
+.bas_result_new_num4 {
+    margin: 0 0 40px;
+    padding: 55px 0 0;
+    background-color: #4f3564;
+	position: relative;
+}
+.bas_result_new_num4 .title_part {
+	color: #FFF;
+	background-color: #8bb047;
+	height: 90px;
+	line-height: 90px;
+	margin: 0 0 0 -10px;
+	padding: 0 15px 0 25px;
+	text-transform: uppercase;
+	font-size: 34px;
+	font-weight: 700;
+	position: relative;
+}
+.bas_result_new_num4 .input_part {
+    position: relative;
+    background-color: #FFF;
+    height: 90px;
+    line-height: 90px;
+    padding: 0 0 0 45px;
+}
+.bas_result_new_num4 .submit_part {
+	background-color: #8b65ab;
+	position: absolute;
+	top: 59px;
+	right: 71px;
+	width: 263px;
+	height: 76px;
+}
+.bas_result_new_num4 .submit_part:before {
+	content: '';
+	position: absolute;
+	left: -42px;
+	top: 0;
+	border: 27px solid transparent;
+	border-right: 15px solid #8b65ab;
+	border-bottom: 49px solid #8b65ab;
+	z-index: 2;
+}
+.bas_result_new_num4 .submit_part:after {
+	content: '';
+	position: absolute;
+	right: -42px;
+	top: 0;
+	border: 27px solid transparent;
+	border-left: 15px solid #8b65ab;
+	border-top: 49px solid #8b65ab;
+	z-index: 2;
+}
+.bas_result_new_num4 input[type="tel"] {
+	display: inline-block;
+	line-height: 90px;
+	border: none;
+	box-shadow: none;
+	font-size: 20px;
+	width: 300px;
+	text-align: center;
+	padding: 0;
+}
+.bas_result_new_num4 input[type="submit"] {
+	background-color: transparent;
+	cursor: pointer;
+	border: navajowhite;
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 0;
+	text-align: center;
+	line-height: 76px;
+	width: 100%;
+	font-size: 34px;
+	font-weight: 700;
+}
+.bas_result_new_num4 .consent_part {
+    padding: 0 0 0 20px;
+    line-height: 55px;
+}
+
+@media (min-width: 992px) AND (max-width: 1199px)
+{
+	.bas_result_new_num4 .title_part {font-size: 28px;}
+	.bas_result_new_num4 input[type="tel"] {width: 175px;}
+}
+@media (min-width: 992px)
+{
+	 .bas_result_new_num4 {background: #4f3564 url('img/bg.png') no-repeat right bottom;}
+	.bas_result_new_num4 .title_part:before {
+		content: '';
+		position: absolute;
+		right: -45px;
+		top: 0;
+		border: 30px solid transparent;
+		border-left: 15px solid #8bb047;
+		border-top: 60px solid #8bb047;
+		z-index: 2;
+	}
+	.bas_result_new_num4 .input_part:before {
+		content: '';
+		position: absolute;
+		right: -45px;
+		top: 0;
+		border: 30px solid transparent;
+		border-left: 15px solid #FFF;
+		border-top: 60px solid #FFF;
+		z-index: 2;
+	}
+}
+@media (max-width: 991px)
+{
+	.bas_result_new_num4 {padding: 0;}
+	.bas_result_new_num4 .block > div {width: 100%;}
+	.bas_result_new_num4 .title_part {margin: 0;}
+	.bas_result_new_num4 .input_part {padding: 0;}
+	.bas_result_new_num4 .submit_part {
+		position: relative;
+		top: auto;
+		right: auto;
+		width: 263px;
+		height: 76px;
+		margin: 20px auto 0;
+	}
+	.bas_result_new_num4 input[type="tel"] {width: 100%;}
+	.bas_result_new_num4 .consent_part {
+		padding: 20px;
+		line-height: 18px;
+		text-align: center;
+	}
+}
+@media (max-width: 575px)
+{
+	.bas_result_new_num4 .title_part {font-size: 22px;}
+	.bas_result_new_num4 .submit_part {width: 150px;}
+	.bas_result_new_num4 input[type="submit"] {font-size: 20px;}
+}

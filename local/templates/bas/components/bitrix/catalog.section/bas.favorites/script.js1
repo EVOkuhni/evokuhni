@@ -1,0 +1,51 @@
+$(function(){
+
+	$(document).on('click', '[data-show-more]', function(){
+
+		BX.showWait();
+
+		var btn = $(this);
+		var page = btn.attr('data-next-page');
+		var id = btn.attr('data-show-more');
+		var bx_ajax_id = btn.attr('data-ajax-id');
+
+		var data = {
+			bxajaxid:bx_ajax_id
+		};
+
+		data['PAGEN_'+id] = page;
+        data['SHOW_MORE'] = 'Y';
+
+		$.ajax({
+			type: "GET",
+			url: window.location.href,
+			data: data,
+			timeout: 3000,
+			success: function(res){
+
+//                res = res.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, "");
+
+                $("#btn_"+bx_ajax_id).replaceWith(res);
+
+//                history.replaceState(data, '', window.location.pathname + "#top_catalog");
+
+				BX.closeWait();
+			}
+		});
+	});
+
+//    if (window.location.hash)
+//    {
+//        var scroll_el = $(window.location.hash);
+//
+//        if ($(scroll_el).length != 0)
+//        {
+//            $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 0);
+//        }
+//    }
+
+//    window.onpopstate = function(event)
+//    {
+//        window.location.href = event.state.path;
+//    };
+});

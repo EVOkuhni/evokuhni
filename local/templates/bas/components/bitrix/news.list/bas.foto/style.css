@@ -1,0 +1,23 @@
+.photo-list {
+    width: 100%;
+    float: left;
+}
+.photo-list .title {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 28px;
+	margin-bottom: 15px;
+}
+.photo-item{
+    width: 24%;
+    float: left;
+    margin: 10px 5px;
+    cursor:pointer;
+}
+.photo-item img{
+border: 2px solid white;
+ transition: border-color 0.2s linear 0s;
+}
+.photo-item img:hover{
+    border: 2px solid #8bb047;
+}
